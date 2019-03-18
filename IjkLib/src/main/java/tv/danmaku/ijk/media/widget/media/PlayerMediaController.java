@@ -270,7 +270,7 @@ public class PlayerMediaController extends FrameLayout {
                     pos = setProgress();
                     if (!mDragging && mShowing && mPlayer.isPlaying()) {
                         msg = Message.obtain(msg);
-                        mHandler.sendMessageDelayed(msg, 1000 - (pos % 1000));
+                        mHandler.sendMessageDelayed(msg, 1000);
                     }
                     break;
                 case PROGRESS:
